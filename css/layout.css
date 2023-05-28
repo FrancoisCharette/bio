@@ -325,85 +325,137 @@ ul#nav li.current a { color: #F06000; }
    border-radius: 3px 0 0 3px;
 }
 
-.photoshop {
-  	width: 60%;
-  	-moz-animation: photoshop 2s ease;
-  	-webkit-animation: photoshop 2s ease;
+.fiftyPercent {
+  	width: 50%;
+  	-moz-animation: fiftyPercent 2s ease;
+  	-webkit-animation: fiftyPercent 2s ease;
 }
-.illustrator {
+.fiftyFivePercent {
   	width: 55%;
-  	-moz-animation: illustrator 2s ease;
-  	-webkit-animation: illustrator 2s ease;
+  	-moz-animation: fiftyFivePercent 2s ease;
+  	-webkit-animation: fiftyFivePercent 2s ease;
 }
-.wordpress {
-  	width: 50%;
-  	-moz-animation: wordpress 2s ease;
-  	-webkit-animation: wordpress 2s ease;
+.sixtyPercent {
+  	width: 60%;
+  	-moz-animation: sixtyPercent 2s ease;
+  	-webkit-animation: sixtyPercent 2s ease;
 }
-.css {
-  	width: 90%;
-  	-moz-animation: css 2s ease;
-  	-webkit-animation: css 2s ease;
+.sixtyFivePercent {
+   width: 65%;
+   -moz-animation: sixtyFivePercent 2s ease;
+   -webkit-animation: sixtyFivePercent 2s ease;
 }
-.html5 {
+.seventyPercent {
+   width: 70%;
+   -moz-animation: seventyPercent 2s ease;
+   -webkit-animation: seventyPercent 2s ease;
+}
+.seventyFivePercent {
+   width: 75%;
+   -moz-animation: seventyFivePercent 2s ease;
+   -webkit-animation: seventyFivePercent 2s ease;
+}
+.eightyPercent {
   	width: 80%;
-  	-moz-animation: html5 2s ease;
-  	-webkit-animation: html5 2s ease;
+  	-moz-animation: eightyPercent 2s ease;
+  	-webkit-animation: eightyPercent 2s ease;
 }
-.jquery {
-  	width: 50%;
-  	-moz-animation: jquery 2s ease;
-  	-webkit-animation: jquery 2s ease;
+.eightyFivePercent {
+   width: 85%;
+   -moz-animation: eightyFivePercent 2s ease;
+   -webkit-animation: eightyFivePercent 2s ease;
+}
+.ninetyPercent {
+  	width: 90%;
+  	-moz-animation: ninetyPercent 2s ease;
+  	-webkit-animation: ninetyPercent 2s ease;
+}
+.ninetyFivePercent {
+  	width: 95%;
+  	-moz-animation: ninetyFivePercent 2s ease;
+  	-webkit-animation: ninetyFivePercent 2s ease;
 }
 
-@-moz-keyframes photoshop {
+@-moz-keyframes fiftyPercent {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  100% { width: 50%;  }
 }
-@-moz-keyframes illustrator {
+@-moz-keyframes fiftyFivePercent {
   0%   { width: 0px;  }
   100% { width: 55%;  }
 }
-@-moz-keyframes wordpress {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-moz-keyframes css {
-  0%   { width: 0px;  }
-  100% { width: 90%;  }
-}
-@-moz-keyframes html5 {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
-@-moz-keyframes jquery {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-
-@-webkit-keyframes photoshop {
+@-moz-keyframes sixtyPercent {
   0%   { width: 0px;  }
   100% { width: 60%;  }
 }
-@-webkit-keyframes illustrator {
-  0%   { width: 0px;  }
-  100% { width: 55%;  }
-}
-@-webkit-keyframes wordpress {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-webkit-keyframes css {
-  0%   { width: 0px;  }
-  100% { width: 90%;  }
-}
-@-webkit-keyframes html5 {
+@-moz-keyframes sixtyFivePercent {
+   0%   { width: 0px;  }
+   100% { width: 65%;  }
+ }
+ @-moz-keyframes seventyPercent {
+   0%   { width: 0px;  }
+   100% { width: 70%;  }
+ }
+ @-moz-keyframes seventyFivePercent {
+   0%   { width: 0px;  }
+   100% { width: 75%;  }
+ }
+ @-moz-keyframes eightyPercent {
   0%   { width: 0px;  }
   100% { width: 80%;  }
 }
-@-webkit-keyframes jquery {
+@-moz-keyframes eightyFivePercent {
+   0%   { width: 0px;  }
+   100% { width: 85%;  }
+ }
+ @-moz-keyframes ninetyPercent {
+  0%   { width: 0px;  }
+  100% { width: 90%;  }
+}
+@-moz-keyframes ninetyFivePercent {
+  0%   { width: 0px;  }
+  100% { width: 95%;  }
+}
+
+@-webkit-keyframes fiftyPercent {
   0%   { width: 0px;  }
   100% { width: 50%;  }
+}
+@-webkit-keyframes fiftyFivePercent {
+  0%   { width: 0px;  }
+  100% { width: 55%;  }
+}
+@-webkit-keyframes sixtyPercent {
+  0%   { width: 0px;  }
+  100% { width: 60%;  }
+}
+@-webkit-keyframes sixtyFivePercent {
+   0%   { width: 0px;  }
+   100% { width: 65%;  }
+ }
+ @-webkit-keyframes seventyPercent {
+   0%   { width: 0px;  }
+   100% { width: 70%;  }
+ }
+ @-webkit-keyframes seventyFivePercent {
+   0%   { width: 0px;  }
+   100% { width: 75%;  }
+ }
+ @-webkit-keyframes eightyPercent {
+  0%   { width: 0px;  }
+  100% { width: 80%;  }
+}
+@-webkit-keyframes eightyFivePercent {
+   0%   { width: 0px;  }
+   100% { width: 85%;  }
+ }
+ @-webkit-keyframes ninetyPercent {
+  0%   { width: 0px;  }
+  100% { width: 90%;  }
+}
+@-webkit-keyframes ninetyFivePercent {
+  0%   { width: 0px;  }
+  100% { width: 95%;  }
 }
 
 /* ------------------------------------------------------------------ */
