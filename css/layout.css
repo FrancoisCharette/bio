@@ -360,7 +360,7 @@ ul#nav li.current a { color: #F06000; }
   	-moz-animation: eightyPercent 2s ease;
   	-webkit-animation: eightyPercent 2s ease;
 }
-.eightyFivePercent {
+.eightyFivePercent{
    width: 85%;
    -moz-animation: eightyFivePercent 2s ease;
    -webkit-animation: eightyFivePercent 2s ease;
