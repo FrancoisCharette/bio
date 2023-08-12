@@ -22,97 +22,82 @@
 </head>
 
 <body>
+  <!-- Header ============================================================== -->
+  <header id="home">
+    <nav id="nav-wrap">
+      <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+        <ul id="nav" class="nav">
+          <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+          <li><a class="smoothscroll" href="#about">About</a></li>
+          <li><a class="smoothscroll" href="#resume">Resume</a></li>
+          <li><a class="smoothscroll" href="#portfolio">Publications</a></li>
+<!--        <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li>
+          <li><a class="smoothscroll" href="#contact">Contact</a></li>
+-->
+        </ul> <!-- end #nav -->
+    </nav> <!-- end #nav-wrap -->
 
-   <!-- Header
-   ================================================== -->
-   <header id="home">
+    <div class="row banner">
+        <div class="banner-text">
+          <h1 class="responsive-headline">François Charette, PhD</h1>
+          <h3>I'm a Silicon Valley based <span>research engineer</span> in <span>Machine Learning</span>, <span>Artificial Intelligence</span> and <span>signal processing</span>. Let's <a class="smoothscroll" href="#about">start scrolling</a>
+          and learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
+          <hr/>
+          <ul class="social">
+              <li><a href="https://www.linkedin.com/in/francois-charette-phd"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+    </div>
+    <p class="scrolldown">
+        <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+    </p>
+  </header> <!-- Header End -->
 
-      <nav id="nav-wrap">
 
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-
-         <ul id="nav" class="nav">
-            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">About</a></li>
-	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
-            <li><a class="smoothscroll" href="#portfolio">Publications</a></li>
-<!--            <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li>
-            <li><a class="smoothscroll" href="#contact">Contact</a></li>
---> 
-         </ul> <!-- end #nav -->
-
-      </nav> <!-- end #nav-wrap -->
-
-      <div class="row banner">
-         <div class="banner-text">
-            <h1 class="responsive-headline">François Charette, PhD</h1>
-            <h3>I'm a Silicon Valley based <span>research engineer</span> in <span>Machine Learning</span>, <span>Artificial Intelligence</span> and <span>signal processing</span>. Let's <a class="smoothscroll" href="#about">start scrolling</a>
-            and learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
-            <hr/>
-            <ul class="social">
-               <li><a href="https://www.linkedin.com/in/francois-charette-phd"><i class="fa fa-linkedin"></i></a></li>
-            </ul>
-         </div>
+  <!-- About Me Section =================================================== -->
+  <section id="about">
+    <div class="row">
+      <div class="three columns">
+        <img class="profile-pic"  src="images/fcharette.jpg" alt="" />
       </div>
+      <div class="nine columns main-col">
+        <h2>About Me</h2>
+        <p>I have 8+ years experience in Artificial Intelligence and Machine Learning. More specifically in end-to-end Deep Neural Networks research for a wide variety of applications. Prior to that, I had 23 years of experience in digital signal processing applied to acoustics and vibration analysis. Throughout my career, I had the opportunity to work on a wide range of applications, all of which have required my advanced analytical skills for their implementations. My PhD and post-doctoral studies were done in the field of active control of sound and vibration, which has led to an extensive amount of hands-on experience for real-time digital signal processing, acoustic and vibration measurements, analysis, instrumentation and sensors/actuators development. More recently I have been working with Deep Neural Networks to use on various applications, such as End-to-End DNN for autonomous vehicle controls, automatic speech recognition, signal separation, sound source identification, etc. I have 20 U.S. patents and 5 more are pending. I have published many articles in scientific journals, and participated at numerous scientific conferences, see publication section below for more details.
+        </p>
+        <p>
+        I have worked at Ford between 1998 and 2023. During that time, I had the opportunity to lead the development and implementations of numerous signal processing tools and metrics for speech signal quality and objective measurements of NVH issues. My analytical skills were consistently used to develop new processing approaches and metrics when the NVH problems at hand were too complex for “off-the-shelf” analysis software applications. I also developed a wide range of user-friendly dedicated signal processing tools that enabled other engineers to perform their work more efficiently. I have authored or co-authored twenty Research & Advance Engineering technical reports and multiple Corporate Engineering Test Procedures. Among my many accomplishments, I won the prestigious Henry Ford Technological Award, 4 Global Customer Satisfaction Awards, a PD Engineering Excellence Award, and 8 additional Awards.
+        </p>
+        <p>Throughout my career, and to this day, my professional goals have always been to work in a position where my analytical thinking, Machine Learning/AI expertise, advanced signal processing knowledge, hands-on approach and managerial skills can be applied to the development and deployment of new and innovative technologies and products.</p>
 
-      <p class="scrolldown">
-         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
-      </p>
-
-   </header> <!-- Header End -->
-
-
-   <!-- About Section
-   ================================================== -->
-   <section id="about">
-
-      <div class="row">
-
-         <div class="three columns">
-
-            <img class="profile-pic"  src="images/fcharette.jpg" alt="" />
-
-         </div>
-
-         <div class="nine columns main-col">
-
-            <h2>About Me</h2>
-
-            <p>I have 8+ years experience in Artificial Intelligence and Machine Learning. More specifically in end-to-end Deep Neural Networks research for a wide variety of applications. Prior to that, I had 23 years of experience in digital signal processing applied to acoustics and vibration analysis. Throughout my career, I had the opportunity to work on a wide range of applications, all of which have required my advanced analytical skills for their implementations. My PhD and post-doctoral studies were done in the field of active control of sound and vibration, which has led to an extensive amount of hands-on experience for real-time digital signal processing, acoustic and vibration measurements, analysis, instrumentation and sensors/actuators development. More recently I have been working with Deep Neural Networks to use on various applications, such as End-to-End DNN for autonomous vehicle controls, automatic speech recognition, signal separation, sound source identification, etc. I have 20 U.S. patents and 5 more are pending. I have published many articles in scientific journals, and participated at numerous scientific conferences, see publication section below for more details. 
-            </p>
-            <p>
-            I have been working at Ford since 1998. During that time, I had the opportunity to lead the development and implementations of numerous signal processing tools and metrics for speech signal quality and objective measurements of NVH issues. My analytical skills were consistently used to develop new processing approaches and metrics when the NVH problems at hand were too complex for “off-the-shelf” analysis software applications. I also developed a wide range of user-friendly dedicated signal processing tools that enabled other engineers to perform their work more efficiently. I have authored or co-authored more than twenty Research & Advance Engineering technical reports and multiple Corporate Engineering Test Procedures. Among my many accomplishments, I won the prestigious Henry Ford Technological Award, 4 Global Customer Satisfaction Awards, a PD Engineering Excellence Award, and 8 additional Awards.
-            </p>
-            <p>Throughout my career, and to this day, my professional goals have always been to work in a position where my analytical thinking, Machine Learning/AI expertise, advanced signal processing knowledge, hands-on approach and managerial skills can be applied to the development and deployment of new and innovative technologies and products.</p>
+        <p>A condensed version of the resume found below can be downloaded in a <a href="/bio/pubs/FrancoisCharettePhD_Resume.docx">Word version</a> or a <a href="/bio/pubs/FrancoisCharettePhD_Resume.pdf">pdf file.</a></p>
 
 
+        <div class="row">
 
-            <div class="row">
+            <div class="columns contact-details">
 
-               <div class="columns contact-details">
+              <h2>Contact Details</h2>
+              <p>
+                  ✆: (209) 972-1220<br>
+                  ✉: Charette.Francois@outlook.com
+          </p>
 
-                  <h2>Contact Details</h2>
-                  <p>
-                     ✆: (209) 972-1220<br>
-                     ✉: Charette.Francois@outlook.com
-					   </p>
+            </div>
+            <!--
+            <div class="columns download">
+              <p>
+                  <a href="#" class="button"><i class="fa fa-download"></i>Download Resume</a>
+              </p>
+            </div>
+            -->
+        </div> <!-- end row -->
 
-               </div>
-               <!--
-               <div class="columns download">
-                  <p>
-                     <a href="#" class="button"><i class="fa fa-download"></i>Download Resume</a>
-                  </p>
-               </div>
-               -->
-            </div> <!-- end row -->
+      </div> <!-- end .main-col -->
 
-         </div> <!-- end .main-col -->
+    </div>
 
-      </div>
-
-   </section> <!-- About Section End-->
+  </section> <!-- About Section End-->
 
 
    <!-- Resume Section
@@ -135,12 +120,12 @@
                <div class="twelve columns">
 
                   <h3>Ford Motor Company</h3>
-                  <p class="info">Research and Product Development Engineer <span>&bull;</span> <em class="date">April 1998 - Present</em></p>
+                  <p class="info">Research and Product Development Engineer <span>&bull;</span> <em class="date">April 1998 - July 2023</em></p>
 
                   <p>
                      During my time at Ford Motor Company, I had the chance to occupy a variety of positions and responsabilities.  Highlights include:
                      <ul style="list-style-type:circle";>
-                        <li><b><u>AI/ML Research Scientist (2015 - Present)</u></b>
+                        <li><b><u>AI/ML Research Scientist (2015 - 2023)</u></b>
                            <i>Palo Alto, Greenfield Labs</i><br>
                            Lead research in:
                         <ul>
@@ -163,7 +148,7 @@
                            Principal developer for the Vehicle Sensitivity Health Chart tools and infrastructure.  Created the first comprehensive implementation of Vehicle Sensitivity data management, processing and reporting system that reduces to amount of time to process full Vehicle Sensitivity data from days to minutes.</li>
                         <li><b><u>Closures Lab Leader (2005 - 2006)</u></b>
                            <i>Advanced Engineering Center</i><br>
-                           Plan, schedule, process data and adapts, if needed, all the signal processing/metrics required for noise and vibration measurements done at the closures lab. These include in-vehicle microphones and accelerometers instrumentation and measurement made on several harsh road surfaces at various speeds.</li>
+                           Plan, schedule, process data and adapt, if needed, all the signal processing/metrics required for noise and vibration measurements done at the closure's lab. These include in-vehicle microphones and accelerometers instrumentation and measurement made on several harsh road surfaces at various speeds.</li>
                         <li><b><u>Sound Quality Lab Leader (2004)</u></b>
                            <i>Advanced Engineering Center</i><br>
                            Responsible for the development and implementation of the Sound Quality lab Corporate Engineering Test Procedures (CETP), data processing, acquisition, archiving, and management. Performed all the Lab Leader responsibilities and proactively created batch processing software to reduce the time required to process data which reduced the lab turn around time.  The time required to process all the SQ closures data has been reduced by at least a factor of five.</li>
