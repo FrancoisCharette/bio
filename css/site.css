@@ -600,32 +600,38 @@ a.pub-title:hover::after { border-color: var(--accent); color: var(--accent); }
   align-items: center;
   gap: .4rem;
   margin-top: .45rem;
-  font-size: .82rem;
-  color: var(--faint);
+  font-size: .84rem;
+  color: var(--muted);
 }
+
+/* These read as buttons at rest, not only on hover: accent text on an
+   accent-tinted pill, so they are obviously clickable in either theme. */
 .pub-langs a {
   display: inline-flex;
   align-items: baseline;
   gap: .3rem;
-  padding: .2rem .6rem;
-  border: 1px solid var(--border);
+  padding: .22rem .65rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 50%, transparent);
   border-radius: 999px;
-  background: var(--bg-soft);
-  color: var(--text);
+  background: var(--accent-soft);
+  color: var(--accent);
   text-decoration: none;
-  font-weight: 550;
-  transition: border-color .15s ease, color .15s ease;
+  font-weight: 600;
+  transition: border-color .15s ease, background .15s ease, color .15s ease;
 }
 .pub-langs a::after {
   content: "PDF";
   font-size: .62rem;
   font-weight: 600;
   letter-spacing: .04em;
-  color: var(--faint);
+  color: color-mix(in srgb, var(--accent) 75%, var(--muted));
 }
-.pub-langs a:hover { border-color: var(--accent); color: var(--accent); }
-.pub-langs a:hover::after { color: var(--accent); }
-.pub-langs .note { font-weight: 400; color: var(--muted); }
+.pub-langs a:hover {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 18%, var(--accent-soft));
+  text-decoration: underline;
+}
+.pub-langs .note { font-weight: 450; color: color-mix(in srgb, var(--accent) 65%, var(--muted)); }
 
 /* In the narrow degree cards, let the label sit on its own line so the
    two language pills stay side by side instead of breaking apart. */
@@ -635,11 +641,10 @@ a.pub-title:hover::after { border-color: var(--accent); color: var(--accent); }
 .pub-videos a::after { content: none; }
 .pub-videos a::before {
   content: "\25B6";
-  font-size: .62em;
-  color: var(--faint);
+  font-size: .68em;
+  color: var(--accent);
   transform: translateY(-1px);
 }
-.pub-videos a:hover::before { color: var(--accent); }
 
 /* In the narrow degree cards, let the label sit on its own line so the
    two language pills stay side by side instead of breaking apart. */
