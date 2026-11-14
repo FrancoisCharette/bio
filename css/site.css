@@ -585,6 +585,49 @@ a.pub-title:hover::after { border-color: var(--accent); color: var(--accent); }
   font-size: .88rem;
   color: var(--muted);
 }
+
+/* Language picker for documents that exist in more than one language. */
+.pub-langs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .4rem;
+  margin-top: .45rem;
+  font-size: .82rem;
+  color: var(--faint);
+}
+.pub-langs a {
+  display: inline-flex;
+  align-items: baseline;
+  gap: .3rem;
+  padding: .2rem .6rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg-soft);
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 550;
+  transition: border-color .15s ease, color .15s ease;
+}
+.pub-langs a::after {
+  content: "PDF";
+  font-size: .62rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+  color: var(--faint);
+}
+.pub-langs a:hover { border-color: var(--accent); color: var(--accent); }
+.pub-langs a:hover::after { color: var(--accent); }
+.pub-langs .note { font-weight: 400; color: var(--muted); }
+
+/* In the narrow degree cards, let the label sit on its own line so the
+   two language pills stay side by side instead of breaking apart. */
+.pub-langs .lang-label { margin-right: .1rem; }
+
+/* In the narrow degree cards, let the label sit on its own line so the
+   two language pills stay side by side instead of breaking apart. */
+.degree .pub-langs { margin-top: .7rem; gap: .35rem; }
+.degree .pub-langs .lang-label { flex-basis: 100%; margin-right: 0; }
 .pub-meta .id {
   font-family: var(--mono);
   font-size: .85em;
