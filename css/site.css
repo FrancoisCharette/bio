@@ -383,7 +383,14 @@ h1, h2, h3, h4 { line-height: 1.25; font-weight: 650; letter-spacing: -0.01em; }
 }
 .badge-wip { border-color: var(--accent); color: var(--accent); }
 
-.project-cta { margin: 1.75rem 0 0; }
+.project-cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .5rem .9rem;
+  margin: 1.75rem 0 0;
+}
+.cta-note { font-size: .88rem; color: var(--muted); }
 
 /* --- Timeline ------------------------------------------------------------ */
 
