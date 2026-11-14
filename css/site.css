@@ -631,6 +631,16 @@ a.pub-title:hover::after { border-color: var(--accent); color: var(--accent); }
    two language pills stay side by side instead of breaking apart. */
 .pub-langs .lang-label { margin-right: .1rem; }
 
+/* Video demonstrations: same control, a play mark instead of the PDF tag. */
+.pub-videos a::after { content: none; }
+.pub-videos a::before {
+  content: "\25B6";
+  font-size: .62em;
+  color: var(--faint);
+  transform: translateY(-1px);
+}
+.pub-videos a:hover::before { color: var(--accent); }
+
 /* In the narrow degree cards, let the label sit on its own line so the
    two language pills stay side by side instead of breaking apart. */
 .degree .pub-langs { margin-top: .7rem; gap: .35rem; }
