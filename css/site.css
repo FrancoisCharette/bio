@@ -507,6 +507,29 @@ h1, h2, h3, h4 { line-height: 1.25; font-weight: 650; letter-spacing: -0.01em; }
   min-width: 4.6rem;
 }
 
+/* An award that has a paper behind it links to it. */
+.award-list a { text-decoration: none; }
+.award-list a:hover { text-decoration: underline; }
+.award-list a::after {
+  content: "\2197";
+  margin-left: .25rem;
+  font-size: .8em;
+  opacity: .7;
+}
+
+/* Highlight whatever an in-page link just jumped to, so arriving at a
+   long list does not leave you hunting for the entry. */
+.pub-list > li:target {
+  background: var(--accent-soft);
+  box-shadow: 0 0 0 .6rem var(--accent-soft);
+  border-radius: 3px;
+  animation: target-fade 2.4s ease-out 1;
+}
+@keyframes target-fade {
+  0%, 55% { background: color-mix(in srgb, var(--accent) 22%, var(--accent-soft)); }
+  100%    { background: var(--accent-soft); }
+}
+
 /* --- Publications -------------------------------------------------------- */
 
 .filters {

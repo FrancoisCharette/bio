@@ -75,5 +75,27 @@
     });
 
     apply('all');
+
+    /* A link into the publication list (an award pointing at its paper)
+       must still work when a filter is hiding that group. Drop back to
+       "All", then bring the entry into view. */
+    var revealTarget = function () {
+      var id = location.hash.slice(1);
+      if (!id) { return; }
+      var el = document.getElementById(id);
+      if (!el) { return; }
+      var group = el.closest('.pub-group');
+      if (!group || !group.hidden) { return; }
+      /* The browser already tried to jump here and found nothing to jump
+         to. Show the group, then place the entry ourselves -- instantly,
+         because a smooth scroll is an animation that does not always run
+         (background tabs, reduced-motion) and would leave the reader
+         nowhere. */
+      apply('all');
+      el.scrollIntoView({ block: 'center', behavior: 'instant' });
+    };
+
+    window.addEventListener('hashchange', revealTarget);
+    revealTarget();
   }
 })();
